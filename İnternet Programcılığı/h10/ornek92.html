@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Pizza Chief</h1>
+    <div class="pizza">
+        <img src="pizza.png" alt="Pizza">
+    </div>
+
+    <input type="radio" id="kucukboy" name="kucukboyy">
+    <label for="kucukboy">Kucuk Boy</label><br>
+    <input type="radio" id="ortaboy" name="kucukboyy">
+    <label for="ortaboy">orta Boy</label><br>
+    <input type="radio" id="buyukboy" name="kucukboyy">
+    <label for="buyukboy">Buyuk Boy</label><br>
+    <br>
+    <br>
+    <input type="radio" id="ince" name="kalinn">
+    <label for="ince">İnce Hamur</label><br>
+    <input type="radio" id="kalin" name="kalinn">
+    <label for="kalın">Kalın Hamur</label><br>
+    <br>
+    <br>
+    <input type="checkbox" id="Peynir" name="peynir">
+    <label for="Peynir">Peynir (+3)</label><br>
+    <input type="checkbox" id="sogan" name="sogan">
+    <label for="sogan">Sogan (+1,5)</label><br>
+    <input type="checkbox" id="yesilbiber" name="yesilbiber">
+    <label for="yesilbiber">Yesil Biber (+1)</label><br>
+    <input type="checkbox" id="kirmizibiber" name="kirmizibiber">
+    <label for="kirmizibiber">kirmizi biber (+2)</label><br>
+    <input type="checkbox" id="anacunez" name="anacunez">
+    <label for="anacunez">anacunez(+3)</label><br>
+    <br>
+    <br>
+    <button type="button" onclick="hesapla()"> Siparis VER</button>
+
+    <script>
+
+        function hesapla() {
+            var ptoplam = 0;
+            var malzemetoplam = 0;
+            var mtoplam = 0;
+
+            if (document.getElementById("kucukboy").checked) {
+                ptoplam += 17;
+
+            } else if (document.getElementById("ortaboy").checked) {
+                ptoplam += 22;
+
+            } else if (document.getElementById("buyukboy").checked) {
+                ptoplam += 27;
+
+            }
+            if (document.getElementById("kalin").checked) {
+                mtoplam += 2;
+
+            }
+            if (document.getElementById("Peynir").checked) {
+                malzemetoplam += 3;
+
+            }
+            if (document.getElementById("sogan").checked) {
+                malzemetoplam += 1.5;
+
+            } 
+            if (document.getElementById("yesilbiber").checked) {
+                malzemetoplam += 1;
+
+            }
+            if (document.getElementById("kirmizibiber").checked) {
+                malzemetoplam += 2;
+
+            }
+            if (document.getElementById("anacunez").checked) {
+                malzemetoplam += 3;
+
+            }
+            toplam = malzemetoplam + ptoplam + mtoplam;
+            window.alert("toplam tutar:" + toplam);
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>

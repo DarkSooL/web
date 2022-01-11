@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" autocomplete="on">
+        <h1>iş başvuru formu</h1>
+
+        <img src="photo.jpg">
+        Fotoğraf seçiniz:
+        <input type="file" name="resim">
+        <br> cinsiyetiniz:
+        <label for="erkek">Erkek</label>
+        <input type="radio" name="cinsiyet" id="erkek"> &nbsp;
+        <label for="kadin">Kadin</label>
+        <input type="radio" name="cinsiyet" id="kadin" checked><br>
+        <br>
+        <label for="tcno">Tc kimlik No*</label>
+        <input type="text" name="tc" size="11" maxlength="11" id="tcno">
+        <label for="tcno">Ad*</label>
+        <input type="text" name="ad" size="30" maxlength="20" id="ad">
+        <label for="soyad">Soyad</label>
+        <input type="text" name="Soyad" size="30" maxlength="20" id="soyad">
+        <label for="dtarihi">Doğum tarihi*</label>
+        <input type="date" value="dtarihi" id="dtarihi">
+        <h1>Kişisel bilgiler</h1>
+
+        <br><label for="dogumyeri"> Doğum yeri*</label>
+        <select name="dogumyeri" id="dogumyeri">
+            <option value="sec">Seçiniz</option>
+            <option value="ankara">ankara</option>
+            <option value="istanbul">istanbul</option>
+            <option value="izmir">izmir</option>
+        </select>
+        <br>
+        <label for="bad">Babaadi*</label>
+        <input type="text" placeholder="Adınız" name="bad" size="30" maxlength="20" id="bad">
+        <label for="mes">Mesleği</label>
+        <input type="text" placeholder="Mesleği" name="meslek" size="30" maxlength="20" id="mes">
+        <br> <label for="aad">Anne adı</label>
+        <input type="text" placeholder="Adınızı Yazınız" name="aad" size="30" maxlength="20" id="aad">
+        <label for="mesl">Mesleği</label>
+        <input type="text" placeholder="mesleği" name="meslek" size="30" maxlength="20" id="mesl">
+
+        <br>Askerlik Durumu*
+        <label for="muaf">Muaf</label>
+        <input type="radio" name="muaf" checked id="muaf">
+        <label for="yapti">yaptı</label>
+        <input type="radio" name="muaf" id="yapti">
+        <label for="tecilli">tecilli</label>
+        <input type="radio" name="muaf" id="tecilli">
+        <br>
+        <label for="mtt">muaf/terhis/tecil tarihi</label>
+        <input type="text" name="muafdrm" size="30" maxlength="20" id="mtt">
+        <br>
+        Medeni durumu*:
+        <label for="Bekar">bekar</label>
+        <input type="radio" name="evli" checked id="bekar">
+        <label for="evli">Evli</label>
+        <input type="radio" name="evli" id="evli">
+        <br>
+        <label for="notlar">Ev adresi*</label>
+        <textarea cols="50" rows="4" id="notlar"></textarea>
+        <br>
+        <label for="sehir">şehir*</label>
+        <select name="sehir" id="sehir">
+            <option value="sec">Seçiniz</option>
+            <option value="ankara">ankara</option>
+            <option value="istanbul">istanbul</option>
+            <option value="izmir">izmir</option>
+        </select>
+        <label for="ilce">ilce*</label>
+        <select name="ilce" id="ilce">
+            <option value="sec">Seçiniz</option>
+            <option value="ankara">ankara</option>
+            <option value="istanbul">istanbul</option>
+            <option value="izmir">izmir</option>
+        </select>
+        <br>
+        <label for="eposta">E-posta*</label>
+        <input type="text" name="eposta" size="11" maxlength="11" id="eposta">
+        <label for="tel">Telefon</label>
+        <input type="text" name="eposta" size="11" maxlength="11" id="tel">
+        <label for="ceptel">Cep telefon*</label>
+        <input type="text" name="eposta" size="11" maxlength="11" id="ceptel">
+
+        <h1>Öğrenim durumu</h1>
+        <br>
+        <label for="lisans">lisans</label>
+        <input type="text" name="lisans" size="11" maxlength="11" id="lisans" placeholder="başlamatarihi ">
+        <label for="bolum" Bölüm>Bölüm</label>
+        <input type="text" name="bolum" size="11" maxlength="11" id="bolum" placeholder="bitiş tarihi">
+        <label for="batarihi">Başlama tarihi</label>
+        <input type="date" value="başlamatarihi" id="batarihi" placeholder="başlama tarihi ">
+        <label for="btarihi">Bitirme tarihi</label>
+        <input type="date" value="bitirme tarihi" id="btarihi" placeholder="bitiş tarihi">
+        <br>Önlisans
+        <input type="text" name="onlisans" size="11" maxlength="11">
+        <input type="text" name="bolum" size="11" maxlength="11">
+        <input type="date" value="başlamatarihi" id="batarihi" placeholder="başlama Yazınız">
+        <input type="date" value="bitirme tarihi" id="btarihi" placeholder="bitirme Yazınız">
+        <br>lise
+        <input type="text" name="lise" size="11" maxlength="11">
+        <input type="text" name="bolum" size="11" maxlength="11">
+        <input type="date" value="başlamatarihi" id="batarihi" placeholder="başlama Yazınız">
+        <input type="date" value="bitirme tarihi" id="btarihi" placeholder="bitirme Yazınız">
+        <br>ilköğretim
+        <input type="text" name="ilköğretim" size="11" maxlength="11">
+        <input type="text" name="bolum" size="11" maxlength="11">
+        <input type="date" value="başlamatarihi" id="batarihi" placeholder="başlama Yazınız">
+        <input type="date" value="bitirme tarihi" id="btarihi" placeholder="bitirme Yazınız">
+        <br>
+        <h1>Çalışma Hayatı </h1>
+        Bilp201'de daha önce çalıştınız mı?
+        <label for="çal">Hayır</label>
+        <input type="radio" name="calısmahayatı" checked id="çal">
+        <label for="çal2">Evet</label>
+        <input type="radio" name="calısmahayatı" id="çal2">
+        <br>
+        Şirketimizde yakın çalışan var mı?
+        <label for="çal3">Hayır</label>
+        <input type="radio" name="calısmahayatı2" id="çal3" checked>
+        <label for="çal4">Evet</label>
+        <input type="radio" name="calısmahayatı2" id="çal4">
+        <h2>(Lütfen Son çalıştığınız yerden itibaren yazınız)</h2>
+
+        <label for="iad">İşyerinin adı</label>
+        <input type="text" name="iad" size="30" maxlength="20" id="bad">
+        <label for="mes">Görev</label>
+        <input type="text" name="gorev" size="30" maxlength="20" id="mes">
+        <label for="basatarihi">Başlangıç</label>
+        <input type="date" value="bitirme tarihi" id="basatarihi" placeholder="bitirme Yazınız">
+        <label for="bittarihi">Bitiş</label>
+        <input type="date" value="bitirme tarihi" id="bittarihi" placeholder="bitirme Yazınız">
+        <label for="asebep">Ayrılış Sebebi</label>
+        <input type="text" name="iad" size="30" maxlength="20" id="asebep">
+        <hr>
+        <label for="iad">İşyerinin adı</label>
+        <input type="text" name="iad" size="30" maxlength="20" id="bad">
+        <label for="mes">Görev</label>
+        <input type="text" name="gorev" size="30" maxlength="20" id="mes">
+        <label for="basaptarihi">Başlangıç</label>
+        <input type="date" value="bitirme tarihi" id="basaptarihi" placeholder="bitirme Yazınız">
+        <label for="bitiitarihi">Bitiş</label>
+        <input type="date" value="bitirme tarihi" id="bitiitarihi" placeholder="bitirme Yazınız">
+        <label for="asebep">Ayrılış Sebebi</label>
+        <input type="text" name="iad" size="30" maxlength="20" id="asebep">
+        <hr>
+        <label for="iad">İşyerinin adı</label>
+        <input type="text" name="iad" size="30" maxlength="20" id="bad">
+        <label for="mes">Görev</label>
+        <input type="text" name="gorev" size="30" maxlength="20" id="mes">
+        <label for="basabtarihi">Başlangıç</label>
+        <input type="date" value="bitirme tarihi" id="basabtarihi" placeholder="bitirme Yazınız">
+        <label for="bititarihi">Bitiş</label>
+        <input type="date" value="bitirme tarihi" id="bititarihi" placeholder="bitirme Yazınız">
+        <label for="asebep">Ayrılış Sebebi</label>
+        <input type="text" name="iad" size="30" maxlength="20" id="asebep">
+        <hr>
+        <h1>Referanslar</h1>
+        <h2>Çalıştığınız Şirketlerden çalışmıyor iseniz öğretmen veya akrabanız olmayan kişilerden en az 1 referans
+            zorunlu</h2>
+
+        <label for="rad">Adı Soyadı*</label>
+        <input type="text" name="rad" size="30" maxlength="20" id="rad">
+        <label for="ydec">yakınlık derecesi</label>
+        <input type="text" name="ydec" size="30" maxlength="20" id="ydec">
+        <label for="iads">İşyerinin adı*</label>
+        <input type="text" name="iads" size="30" maxlength="20" id="iads">
+        <label for="grv">Görevi*</label>
+        <input type="text" name="iads" size="30" maxlength="20" id="grv">
+        <label for="tlf">telefon*</label>
+        <input type="text" name="iads" size="30" maxlength="20" id="tlf">
+        <hr>
+        <label for="radd">Adı Soyadı</label>
+        <input type="text" name="rad" size="30" maxlength="20" id="radd">
+        <label for="ydecc">yakınlık derecesi</label>
+        <input type="text" name="ydec" size="30" maxlength="20" id="ydecc">
+        <label for="iadss">İşyerinin adı*</label>
+        <input type="text" name="iads" size="30" maxlength="20" id="iadss">
+        <label for="grvv">Görevi*</label>
+        <input type="text" name="iads" size="30" maxlength="20" id="grvv">
+        <label for="tlff">telefon</label>
+        <input type="text" name="iads" size="30" maxlength="20" id="tlff">
+
+        <h1>Diğer Bilgiler</h1>
+        Sigara Kullanıyor musunuz?
+        <label for="hyr">Hayır</label>
+        <input type="radio" name="evett" id="hyr" checked>
+        <label for="evt">evet</label>
+        <input type="radio" name="evett" id="evt">
+        <br>
+        Çalışmaya engel bir sağlık sorunu var mı?
+        <label for="hyrr">Hayır</label>
+        <input type="radio" name="evet" id="hyrr" checked>
+        <label for="evtt">evet</label>
+        <input type="radio" name="evet" id="evtt">
+        <br>
+        <textarea cols="50" rows="4">Sağlık Durumu açıklanması</textarea>
+        <br>Herhangibir suçtan yargılandınız mı?
+        <label for="hyrrr">Hayır</label>
+        <input type="radio" name="evet1" id="hyrrr" checked>
+        <label for="evttt">evet</label>
+        <input type="radio" name="evet1" id="evttt">
+        <br>
+        <textarea cols="50" rows="4">Yargılanma Süreci Acıklama</textarea>
+        <br>
+        Çalışmak istediğiniz pozisyon
+        <label for="fulltime">Full-Time Elemanı</label>
+        <input type="radio" name="evet2" id="hyrrr" checked>
+        <label for="ptime">Part Time Elemanı</label>
+        <input type="radio" name="evet2" id="ptime">
+        <label for="myon">Mağza Yöneticisi</label>
+        <input type="radio" name="evet" id="myon">
+        <label for="diger">Diğer</label>
+        <input type="radio" name="evet2" id="diger">
+        <br>
+        <label for="ucret">Beklenen Net ücret*</label>
+        <input type="text" name="ucret" size="11" maxlength="11" id="ucret" placeholder="TL">
+        <br>
+        <input type="checkbox" name="kabul" value="kabul"> Yukarıda verilen bilgilerin doğru olduğunu kabul eder, Kişisel verilerin korunması ilişkin  <a href="https://www.kvkk.gov.tr/">Bilgilendirmeyi</a> 
+        okudum Kabul Ediyorum.
+        Vereceğiniz Kişisel Bilgileriniz iş başvuru ve değerlendirme süreçlerinde tarafınıza işlenecektir KVKK ya <a href="https://www.kvkk.gov.tr/">Burdan</a> ulaşabilirsiniz.
+       <br> <input type="submit" value="Gönder">
+
+    </form>
+</body>
+
+</html>

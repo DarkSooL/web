@@ -1,0 +1,1 @@
+Open Edit HTML, find and change Disqus user name "simplify-2019-free" into your blog Disqus.

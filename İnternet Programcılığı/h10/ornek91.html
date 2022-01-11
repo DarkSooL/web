@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Ekran boyutları <span id="boyut"></span>.</p>
+    <p>Desteklenen Boyutlar <span id="desteklenen"></span>. (görev cubugu haric)</p>
+    <p>Bu belgenin URL<span id="url"></span>. </p>
+    <p id="onay"></p>
+    <br>
+    <input type="button" value="Geri" onclick="geriGit()"><br>
+    <input type="button" value="İleri" onclick="onayla()">
+    <script>
+        document.getElementById("boyut").innerHTML=screen.width+"x"+screen.height;
+        document.getElementById("desteklenen").innerHTML=screen.availWidth+"x"+screen.availHeight;
+        document.getElementById("url").innerHTML=window.location.href;
+        function geriGit(){
+            window.history.back();
+        }
+        function onayla(){
+            var txt;
+            if(confirm("Düğmelerden Birine basınız.")){
+                txt="Tamama Bastınız";
+
+            }else{
+                txt="iptal düğmesine bastınız";
+            }
+            document.getElementById("onay").innerHTML=txt;
+        }
+
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+    function degistir(){
+        var gosterilenResim = document.getElementById("ampul");
+        if(gosterilenResim.src.search("kapali")!=-1){
+            gosterilenResim.src="acik_ampul.gif";
+        }else
+        gosterilenResim.src="kapali_ampul.gif";
+
+    }
+    function ac() {
+        var gosterilenResim = document.getElementById("ampul");
+        gosterilenResim.src="acik_ampul.gif";
+    }
+function kapat(){
+    var gosterilenResim = document.getElementById("ampul");
+        gosterilenResim.src="kapali_ampul.gif";
+}
+    </script>
+
+</head>
+<body>
+    <h2>js fonksiyon</h2>
+    <p>ampul yan sön</p>
+    <img id="ampul" src="kapali_ampul.gif" onmouseover="ac()" onmouseout="kapat()">
+
+</body>
+</html>

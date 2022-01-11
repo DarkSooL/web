@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Mesaj Görüntüleme</h1>
+    <p>Günün saatine göre (0-23) Mesaj Görüntüler</p>
+    <script>
+        var date = new Date()
+        var time = date.getHours()
+        
+        document.write("Saat:"+time);        
+        document.write(" <br>");
+
+    
+        if (time<6 && time >= 11){
+        document.write("Günaydın");
+        }
+        else if (time>=11 && time <=17)
+         {
+        document.write("İyi Günler");
+        }
+        else if(time>=17 && time<=22)
+         {
+        document.write("İyi Akşamlar");
+         }
+         else if(time>=22 && time<=24)
+         {
+        document.write("İyi Akşamlar");
+         }
+        </script>
+</body>
+</html>

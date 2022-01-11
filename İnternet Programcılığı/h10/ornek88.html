@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">1. Paragraf</p>
+    <p id="p2">2. Paragraf</p>
+    <p id="p3">3. Paragraf</p>
+    <button type="button" onclick="pBicimlendir()"> Kırmızı yap</button>
+    <br>
+    <span id="p1">1. Span</span> <br>
+    <span id="pp2">2. Span</span> <br>
+    <span id="pp3">3. Span</span> <br>
+    <button type="button" onclick="sBicimlendir()"> Sarı yap</button>
+    <script>
+        function pBicimlendir(){
+            var pDizi = document.getElementsByTagName("p");
+            for(var i = 0;i < pDizi.length;i++){
+                pDizi[i].style.backgroundColor="#FF0000";
+
+            }
+
+        }
+        function sBicimlendir(){
+            var spanDizi = document.getElementsByTagName("span");
+            for(var i = 0;i < spanDizi.length;i++){
+                spanDizi[i].style.backgroundColor="#FFFF00";
+
+            }
+        }
+
+    </script>
+
+
+
+
+</body>
+</html>

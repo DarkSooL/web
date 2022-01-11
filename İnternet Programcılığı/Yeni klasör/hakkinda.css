@@ -1,0 +1,91 @@
+body{
+    font-family:"Open Sans", sans-serif;
+    font-weight:600;
+    background-image: url(./res/3.jpg);
+    background-repeat: no-repeat;
+	background-size: cover;
+
+    
+}
+.box{
+    width: 450px;
+    background: #224;
+    padding: 50px;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.box img{
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+    cursor: pointer;
+    transition: 0.5ms;
+
+}
+.box img:hover{
+    transform: scale(0.9);
+
+}
+
+.box h1{
+    font-size: 20px;
+    letter-spacing: 4px;
+    font-weight: 100;
+
+}
+.box h5{
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 100;
+}
+
+.box p{
+
+    text-align: justify;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.box li{
+    display: inline-block;
+    margin: 6px;
+    list-style: none;
+
+}
+
+.box li a{
+    color: white;
+    font-size: 60px;
+    transition: all ease-in-out 250ms;
+
+}
+.box li a:hover{
+    color: black;
+}
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.html {width: 90%; background-color: #04AA6D;} /* Green */
+.css {width: 80%; background-color: #2196F3;} /* Blue */
+.js {width: 65%; background-color: #f44336;} /* Red */
+.php {width: 60%; background-color: #808080;} /* Dark Grey */

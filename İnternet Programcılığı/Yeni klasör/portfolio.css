@@ -1,0 +1,36 @@
+body, html {
+    height: 100%;
+    background-image: url(./res/6.jpg);
+    background-size: cover;
+    position: relative;
+    color: white;
+    font-family: "Courier New", Courier, monospace;
+  }
+
+
+h1{
+
+    color: black;
+    font-weight: 885px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+h4{
+
+    color: black;
+    font-size: 25px;
+    font-weight: 885px;
+    margin-top: 10px;
+    text-align: center;
+
+}
+h5{
+
+    color: black;
+    font-size: 25px;
+    font-weight: 885px;
+    margin-top: 10px;
+    text-align: center;
+
+}

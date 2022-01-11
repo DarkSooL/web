@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="yeni_sehir" placeholder="Yeni Şehir Giriniz.">
+    <p>Yeni Şehir Eklemek için butona basınız.</p>
+    <button onclick="ekle()">Eleman Ekle</button>
+    <p>Yeni şehiri dizi başından çıkartmak için butona tıklayın</p>
+    <button onclick="cikar()">Eleman Çıkart</button>
+    <p id="cikti"></p>
+    <script>
+        var sehirler = ["Ankara", "İstanbul", "İzmir", "Antalya", "MErsin"];
+        document.getElementById("cikti").innerHTML = sehirler;
+        function ekle() {
+            var yeni_sehir = document.getElementById("yeni_sehir").value;
+            if (yeni_sehir != "") {
+                sehirler.unshift(yeni_sehir);
+                document.getElementById("cikti").innerHTML = sehirler;
+            }
+
+        }
+        function cikar() {
+            sehirler.shift();
+            document.getElementById("cikti").innerHTML = sehirler;
+        }
+    </script>
+</body>
+
+</html>

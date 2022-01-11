@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <script>
+       function kuvvethesapla
+
+   </script>
+</head>
+<body>
+    <h2>1-49 arasında rastgele sayılar</h2>
+    <p>Haftanın rastgele sayıları</p>
+    <p id="karsilastirma"></p>
+    <script>
+        var dizi=[];
+        var adet;
+        var mesaj="<ol>";
+        for(adet=0;adet<6;adet++){
+            dizi[adet]=Math.floor(Math.random()*49)+1;
+            for(sayac=adet-1;sayac>=0;sayac--)
+            if(dizi[adet]==dizi[sayac]){
+                adet--;
+                break;
+            }
+        }    
+        for(adet =0 ; adet<6;adet++){
+            mesaj+="<li>"+dizi[adet]+"</li>";
+        }
+        mesaj+="</ol>";
+        document.getElementById("karsilastirma").innerHTML=mesaj;
+    </script>
+</body>
+</html>

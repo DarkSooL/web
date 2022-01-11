@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function kuvvethesapla(a=0,b=0){
+        var sonuc=1;
+
+        sonuc =a**b;
+        console.log(sonuc);
+        return sonuc;
+     }
+
+    </script>
+
+</head>
+<body>
+    <h2>Javascript fonksiyonları</h2>
+    <p>bu fonskiyon üst hesaplar</p>
+    <p id="cikti"></p>
+    <script>
+    var sayilar;
+    sayilar=kuvvethesapla(4,3);
+    document.getElementById("cikti").innerHTML=sayilar;
+    </script>
+</body>
+</html>

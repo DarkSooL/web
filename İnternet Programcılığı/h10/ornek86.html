@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Takım Sıralaması</h1>
+    <ol>
+        <li id="t1">.ci Takım</li>
+        <li id="t2">.ci Takım</li>
+        <li id="t3">.ci Takım</li>
+        <li id="t4">.ci Takım</li>
+        <li id="t5">.ci Takım</li>
+    </ol>
+    <script>
+        var takimlar =["Sivas","8 TAŞ","6S","Basaksehir","FENERBAHÇE"];
+        var idDizi=[];
+        for(var i=0;i<takimlar.length;i++){
+            idDizi[i]="t"+(i+1);
+
+        }for(var i=0;i<takimlar.length;i++){
+            document.getElementById(idDizi[i]).innerHTML=takimlar[i];
+        }
+    </script>
+</body>
+</html>

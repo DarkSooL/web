@@ -1,0 +1,27 @@
+h1{
+    color: white;
+    background: darkgray;
+    text-align: center;
+    font-size: 55px;
+}
+nav{
+    background: yellow;
+    text-align: center;
+    font-size: 45px;
+}
+h3{
+    color: gray;
+    background: #1FBFFF;
+    font-size: 35px;
+}
+span{
+    background: yellow;
+    color: green;
+}
+footer{
+    background: darkgray;
+
+}
+progress{
+    font-size: 50px;
+}

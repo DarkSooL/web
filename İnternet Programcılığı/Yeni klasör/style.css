@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
+*{
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    text-decoration: none;
+}
+body{
+    font-family:"Open Sans", sans-serif;
+    font-weight:600;
+    background-image: url(./res/4.jpg);
+	background-size: cover;
+
+    
+}
+.menu{
+    background-color: #222;
+    overflow:hidden;
+}
+.links {
+    position: relative;
+    top: 24px;
+}
+.menu ul li{
+    float:left;
+    margin-right:10px;
+    padding: 6px 13px;
+    margin: 0 8px;
+}
+.menu ul li a{
+    z-index:9999;
+    position: relative;
+    display:block;
+    color:#BDBDBD;
+    font-size:14px;
+    letter-spacing:.7px;
+    padding:15px 12px;
+}
+.menu ul li a:after{
+    z-index:-1;
+    content:"";
+    position:absolute;
+    width:100%;
+    height:0%;
+    bottom:0;
+    left:0;
+    background-color: red;
+    transition:height 150ms;
+}
+.menu ul li a:hover{
+    color:#fff;
+}
+.menu ul li a:hover:after{
+    height: 100%;
+}
+.center h1{
+
+    color: black;
+    font-weight: 885px;
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0.8;
+}
+
+.center h2{
+
+    color: black;
+    font-size: 25px;
+    font-weight: 885px;
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0.8;
+
+}
+
+.center .buttons{
+
+    margin:  25px 1150px;
+}
+
+.buttons button{
+
+    height: 50px;
+    width: 100px;
+    font-size: 10px;
+    color: #BDBDBD ;
+    background: #222;
+    cursor: pointer;
+    outline: none;
+    border-radius: 25px;
+    font-weight: bold;
+    font-family:"Open Sans", sans-serif;
+
+    
+}
+.buttons button:hover{
+
+    background-color: red;
+
+}
+
+.button {
+    background-color: #222;
+    border-radius:  22px;
+    color: #BDBDBD;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.button:hover{
+
+    background: red;
+}
